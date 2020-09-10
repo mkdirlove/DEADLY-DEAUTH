@@ -10,8 +10,8 @@ A deadly WiFi deauthentication attack tool powered by MDK3.
     $ git clone https://github.com/mkdirlove/DEADLY-DEAUTH
     $ cd DEADLY-DEAUTH
     $ chmod +x *
-    $ ./installer.sh
-    $ bash deadly-deauth.sh
+    $ sudo ./installer.sh
+    $ sudo bash deadly-deauth.sh
 # ONE LINE INSTALLATION COMMAND
-    $ git clone https://github.com/mkdirlove/DEADLY-DEAUTH;cd DEADLY-DEAUTH;chmod +x *;bash installer.sh;bash deadly-deauth.sh
+    $ git clone https://github.com/mkdirlove/DEADLY-DEAUTH;cd DEADLY-DEAUTH;chmod +x *;sudo ./installer.sh;sudo bash deadly-deauth.sh
 #
