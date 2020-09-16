@@ -1,14 +1,4 @@
 #!/bin/sh
-
-function check_sudo() {
-  if [[ "$EUID" -ne 0 ]]; then
-    clear
-    echo "    Deadly Deauther" | figlet -f slant
-    printf "%b\n" "ERROR!!! This script must be run as root. Use sudo." >&2
-    exit 1
-  fi
-}
-
 function banner() {
 	echo
     cat << "EOF"
@@ -39,8 +29,7 @@ function install() {
 	echo "    [       FACEBOOK  : https://www.facebook.com/mkdirlove.git   ]"
 	echo "    --------------------------------------------------------------"
 	echo ""
-    check_sudo
-    apt update  
-    apt install -y mdk3 macchanger
+    sudo apt update  
+    sudo apt install -y mdk3 macchanger
     echo " [!] Installation Complete!"
 }
